@@ -9,7 +9,7 @@ export default function CurrentTemp() {
         19
       </span>
       <span className="Units">
-        <a href="#" id="celsius-link" class="Active">
+        <a href="#" id="celsius-link" className="Active">
           ℃
         </a>{" "}
         |

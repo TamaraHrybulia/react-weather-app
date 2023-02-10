@@ -12,7 +12,7 @@ export default function SearchForm() {
             className="form-control"
             placeholder="enter a city"
             id="search-text-input"
-            autocomplete="off"
+            autoComplete="off"
           />
         </div>
         <div className="col-6">

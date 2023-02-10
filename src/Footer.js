@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="Footer">
       This project was coded by Tamara Hrybulia and is{" "}
       <a
-        href="https://github.com/TamaraHrybulia/weather-application"
+        href="https://github.com/TamaraHrybulia/react-weather-app"
         target="_blank"
       >
         open-sourced on GitHub{" "}
