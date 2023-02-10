@@ -4,7 +4,7 @@ import "./CurrentWeather.css";
 
 export default function CurrentWeather() {
   return (
-    <div className="col-3 CurrentCityIcon">
+    <div className="col-4 CurrentCityIcon">
       <img src="" alt="" className="CurrentWeatherIcon" id="main-icon" />
       🌥
       <div

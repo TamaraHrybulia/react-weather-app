@@ -6,8 +6,6 @@ import CurrentTemp from "./CurrentTemp";
 import CurrentDescription from "./CurrentDescription";
 import Footer from "./Footer";
 import "./App.css";
-import background from "./images/dark-sky.jpg";
-const bootstrap = require("bootstrap");
 
 export default function App() {
   return (

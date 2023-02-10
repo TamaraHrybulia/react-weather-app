@@ -1,11 +1,14 @@
 body {
-  font-family: "Noto Sans Georgian", sans-serif;
-  color: white;
   background: url(./images/dark-sky.jpg);
   background-size: cover;
 }
 
-a {
+.App {
+  font-family: "Noto Sans Georgian", sans-serif;
+  color: white;
+}
+
+.App a {
   color: #ff6100;
 }
 
