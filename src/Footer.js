@@ -9,11 +9,15 @@ export default function Footer() {
       <a
         href="https://github.com/TamaraHrybulia/react-weather-app"
         target="_blank"
+        rel="noreferrer"
       >
         open-sourced on GitHub{" "}
       </a>
       and hosted on{" "}
-      <a href="https://effulgent-gecko-547801.netlify.app/"> Netlify </a>
+      <a href="https://effulgent-gecko-547801.netlify.app/" rel="noreferrer">
+        {" "}
+        Netlify{" "}
+      </a>
     </footer>
   );
 }
