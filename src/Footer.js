@@ -14,7 +14,7 @@ export default function Footer() {
         open-sourced on GitHub{" "}
       </a>
       and hosted on{" "}
-      <a href="https://effulgent-gecko-547801.netlify.app/" rel="noreferrer">
+      <a href="https://rainbow-genie-2051d5.netlify.app" rel="noreferrer">
         {" "}
         Netlify{" "}
       </a>
