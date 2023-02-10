@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  line-height: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.DescriptionBlock {
+  padding: 20px 0;
+}
+
+.FeelsLikeUnits {
+  position: relative;
+  top: -5px;
+  font-size: 13px;
+}

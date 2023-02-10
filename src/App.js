@@ -1,23 +1,30 @@
-import logo from "./logo.svg";
+import React from "react";
+import SearchForm from "./SearchForm";
+import Header from "./Header";
+import CurrentWeather from "./CurrentWeather";
+import CurrentTemp from "./CurrentTemp";
+import CurrentDescription from "./CurrentDescription";
+import Footer from "./Footer";
 import "./App.css";
+import background from "./images/dark-sky.jpg";
+const bootstrap = require("bootstrap");
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main container">
+        <div className="MainDisplay">
+          <SearchForm />
+          <Header />
+          <div className="row">
+            <CurrentWeather />
+            <CurrentTemp />
+            <CurrentDescription />
+          </div>
+        </div>
+        <div className="WeatherForecast"></div>
+        <Footer />
+      </div>
     </div>
   );
 }
-
-export default App;
