@@ -6,9 +6,15 @@ export default function WeatherInfo(props) {
   return (
     <div className="row">
       <div className="col-4 CurrentCityIcon">
-        <img src="" alt="" className="CurrentWeatherIcon" />
-        🌥
-        <div className="CurrentWeatherDescription">Partly cloudy</div>
+        <img
+          src={props.data.icon}
+          alt={props.data.description}
+          className="CurrentWeatherIcon"
+        />
+
+        <div className="CurrentWeatherDescription">
+          {props.data.description}
+        </div>
       </div>
       <div className="col-4 CurrentTempBlock">
         <span className="CurrentTemp">{props.data.temperature} </span>
@@ -21,14 +27,10 @@ export default function WeatherInfo(props) {
       </div>
       <div className="col-4 DescriptionBlock">
         <ul>
+          <li>💧 Humidity: {props.data.humidity} %</li>
+          <li>💨 Wind speed: {props.data.wind} km/h</li>
           <li>
-            💧 Humidity: <span></span>%
-          </li>
-          <li>
-            💨 Wind speed: <span></span> km/h
-          </li>
-          <li>
-            🌡 Feels like: <span></span>
+            🌡 Feels like: {props.data.feelsLike}
             <span className="FeelsLikeUnits">°</span>
           </li>
         </ul>

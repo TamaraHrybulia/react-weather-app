@@ -24,9 +24,15 @@ export default function SearchWeather(props) {
   }
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       loaded: true,
-      temperature: response.data.main.temp,
+      temperature: Math.round(response.data.main.temp),
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      description: response.data.weather[0].description,
+      feelsLike: Math.round(response.data.main.feels_like),
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
