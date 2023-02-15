@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+.CurrentWeatherDescription {
+  text-align: center;
+  font-weight: 300;
+}
+
+.DescriptionBlock {
+  padding: 20px 0;
+}
+
+.FeelsLikeUnits {
+  position: relative;
+  top: -5px;
+  font-size: 13px;
+}
+
+.CurrentTemp {
+  font-size: 80px;
+  text-align: center;
+}
+.CurrentTempBlock {
+  padding: 20px 0;
+}
+
+.Units {
+  position: relative;
+  top: -50px;
+  font-size: 20px;
+}
+
+.Active {
+  cursor: default;
+  color: #fff;
+  text-decoration: none;
+}
