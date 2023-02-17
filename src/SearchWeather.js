@@ -32,7 +32,7 @@ export default function SearchWeather(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       feelsLike: Math.round(response.data.main.feels_like),
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       cityName: response.data.name,
       countryName: response.data.sys.country,
       dateInfo: new Date(response.data.dt * 1000),

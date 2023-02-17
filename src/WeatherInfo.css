@@ -24,6 +24,7 @@ ul {
 }
 .CurrentTempBlock {
   padding: 20px 0;
+  text-align: center;
 }
 
 .Units {
@@ -36,4 +37,8 @@ ul {
   cursor: default;
   color: #fff;
   text-decoration: none;
+}
+
+.CurrentCityIcon {
+  text-align: center;
 }
