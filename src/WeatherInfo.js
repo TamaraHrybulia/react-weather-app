@@ -1,4 +1,5 @@
 import React from "react";
+import CurrentTemperature from "./CurrentTemperature";
 
 import "./WeatherInfo.css";
 
@@ -17,13 +18,7 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <div className="col-4 CurrentTempBlock">
-        <span className="CurrentTemp">{props.data.temperature} </span>
-        <span className="Units">
-          <a href="/" className="Active">
-            ℃
-          </a>{" "}
-          |<a href="/">℉</a>
-        </span>
+        <CurrentTemperature celsius={props.data.temperature} />
       </div>
       <div className="col-4 DescriptionBlock">
         <ul>
