@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "./Header";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import "./SearchWeather.css";
 
 export default function SearchWeather(props) {
@@ -36,35 +37,41 @@ export default function SearchWeather(props) {
       cityName: response.data.name,
       countryName: response.data.sys.country,
       dateInfo: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
     });
   }
 
   if (weatherData.loaded) {
     return (
       <div className="SearchWeather">
-        <form onSubmit={handleSubmit}>
-          <div className="row g-2">
-            <div className="col-6">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="enter a city"
-                autoComplete="off"
-                onChange={changeCity}
-              />
+        <div className="MainDisplay">
+          <form onSubmit={handleSubmit}>
+            <div className="row g-2">
+              <div className="col-6">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="enter a city"
+                  autoComplete="off"
+                  onChange={changeCity}
+                />
+              </div>
+              <div className="col-6">
+                <button type="submit" className="btn btn-primary me-2">
+                  search
+                </button>
+                <button type="button" className="btn btn-primary">
+                  current city
+                </button>
+              </div>
             </div>
-            <div className="col-6">
-              <button type="submit" className="btn btn-primary me-2">
-                search
-              </button>
-              <button type="button" className="btn btn-primary">
-                current city
-              </button>
-            </div>
-          </div>
-        </form>
-        <Header data={weatherData} />
-        <WeatherInfo data={weatherData} />
+          </form>
+          <Header data={weatherData} />
+          <WeatherInfo data={weatherData} />
+        </div>
+        <div className="WeatherForecastDisplay">
+          <WeatherForecast data={weatherData} />
+        </div>
       </div>
     );
   } else {
