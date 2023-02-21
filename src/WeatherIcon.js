@@ -43,7 +43,7 @@ export default function WeatherIcon(props) {
     <img
       src={codeMapping[props.code]}
       alt={props.alt}
-      style={{ width: "15vw" }}
+      style={{ width: `${props.size}vw` }}
     />
   );
 }

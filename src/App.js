@@ -1,5 +1,6 @@
 import React from "react";
 import SearchWeather from "./SearchWeather";
+import WeatherForecast from "./WeatherForecast";
 import Footer from "./Footer";
 import "./App.css";
 
@@ -10,7 +11,9 @@ export default function App() {
         <div className="MainDisplay">
           <SearchWeather defaultCity="Kyiv" />
         </div>
-        <div className="WeatherForecast"></div>
+        <div className="WeatherForecastDisplay">
+          <WeatherForecast />
+        </div>
         <Footer />
       </div>
     </div>

@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 .MainDisplay,
-.WeatherForecast {
+.WeatherForecastDisplay {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0 auto 20px;
   padding: 20px;
