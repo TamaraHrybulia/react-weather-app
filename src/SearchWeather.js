@@ -36,7 +36,6 @@ export default function SearchWeather(props) {
   }
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       loaded: true,
       temperature: response.data.main.temp,
@@ -49,6 +48,8 @@ export default function SearchWeather(props) {
       countryName: response.data.sys.country,
       dateInfo: new Date(response.data.dt * 1000),
       coordinates: response.data.coord,
+      tempMax: Math.round(response.data.main.temp_max),
+      tempMin: Math.round(response.data.main.temp_min),
     });
   }
 
@@ -91,5 +92,6 @@ export default function SearchWeather(props) {
     );
   } else {
     searchCity();
+    return null;
   }
 }

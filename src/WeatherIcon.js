@@ -40,10 +40,12 @@ export default function WeatherIcon(props) {
   };
 
   return (
-    <img
-      src={codeMapping[props.code]}
-      alt={props.alt}
-      style={{ width: `${props.size}vw` }}
-    />
+    <div className="WeatherIcon">
+      <img
+        src={codeMapping[props.code]}
+        alt={props.alt}
+        style={{ width: `${props.size}vw` }}
+      />
+    </div>
   );
 }
