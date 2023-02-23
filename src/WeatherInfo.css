@@ -10,7 +10,6 @@
 
 .WeatherInfo .CurrentWeatherDescription {
   text-align: center;
-  font-weight: 300;
   font-size: 18px;
 }
 
@@ -39,4 +38,78 @@
 .WeatherInfo .Active {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .WeatherInfo .CurrentCityIcon {
+    padding-top: 20px;
+  }
+
+  .WeatherInfo .CurrentTempBlock {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 930px) {
+  .WeatherInfo .CurrentTempBlock {
+    padding-top: 25px;
+  }
+
+  .WeatherInfo ul {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  .WeatherInfo .CurrentWeatherDescription {
+    font-size: 15px;
+  }
+  .WeatherInfo ul {
+    line-height: 25px;
+    padding-bottom: 0;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .WeatherInfo .CurrentWeatherDescription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 590px) {
+  .WeatherInfo ul {
+    padding: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .WeatherInfo .CurrentWeatherDescription {
+    font-size: 14px;
+  }
+  .WeatherInfo ul {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .WeatherInfo .CurrentWeatherDescription {
+    font-size: 10px;
+  }
+  .CurrentTemperature .CurrentTemp {
+    font-size: 35px;
+  }
+  .CurrentTemperature .Units {
+    position: relative;
+    top: -17px;
+    left: -7px;
+    font-size: 11px;
+  }
+
+  .WeatherInfo ul {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }

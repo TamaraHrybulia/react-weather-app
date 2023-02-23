@@ -1,0 +1,49 @@
+@media (max-width: 990px) {
+  .Header h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .Header h1 {
+    font-size: 24px;
+  }
+  .Header .date {
+    font-size: 15px;
+  }
+  .Header {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 570px) {
+  .Header .date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .Header h1 {
+    font-size: 20px;
+  }
+  .Header .date {
+    font-size: 12px;
+  }
+
+  .Header {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px) {
+  .Header h1 {
+    font-size: 14px;
+  }
+  .Header .date {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,83 @@
+.WeatherForecast .card {
+  height: 180px;
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.WeatherForecast .card:hover {
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  background: rgba(74, 144, 226, 0.3);
+}
+
+.WeatherForecast h2 {
+  color: #ff6100;
+  font-size: 23px;
+}
+
+.WeatherForecast .forecast-temperatures {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.WeatherForecast .card-night-temperature {
+  opacity: 0.6;
+}
+
+@media (max-width: 990px) {
+  .WeatherForecast .card {
+    height: 160px;
+  }
+}
+@media (max-width: 700px) {
+  .WeatherForecast .col {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 660px) {
+  .WeatherForecast h2 {
+    font-size: 16px;
+  }
+  .WeatherForecast .forecast-temperatures {
+    font-size: 14px;
+  }
+
+  .WeatherForecast .card {
+    height: 140px;
+  }
+}
+
+@media (max-width: 590px) {
+  .WeatherForecast .card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .WeatherForecast .card {
+    height: 140px;
+  }
+}
+
+@media (max-width: 560px) {
+  .WeatherForecast .card {
+    height: 130px;
+  }
+}
+@media (max-width: 520px) {
+  .WeatherForecast .card {
+    height: 120px;
+  }
+}
+
+@media (max-width: 420px) {
+  .WeatherForecast .card {
+    height: 110px;
+  }
+
+  .WeatherForecast h2 {
+    font-size: 14px;
+  }
+  .WeatherForecast .forecast-temperatures {
+    font-size: 12px;
+  }
+}

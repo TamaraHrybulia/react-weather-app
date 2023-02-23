@@ -17,3 +17,50 @@
 .SearchWeather .WeatherForecastDisplay {
   padding: 0 20px;
 }
+
+@media (max-width: 700px) {
+  .SearchWeather .form-control {
+    font-size: 14px;
+  }
+  .SearchWeather .btn {
+    font-size: 14px;
+  }
+
+  .SearchWeather .MainDisplay {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 570px) {
+  .SearchWeather .MainDisplay {
+    padding: 15px;
+  }
+  .SearchWeather .form-control,
+  .SearchWeather .btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+@media (max-width: 520px) {
+  .SearchWeather form {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 410px) {
+  .SearchWeather .form-control {
+    font-size: 11px;
+  }
+  .SearchWeather .btn {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 391px) {
+  .SearchWeather .form-control {
+    font-size: 10px;
+  }
+  .SearchWeather .btn {
+    font-size: 10px;
+  }
+}

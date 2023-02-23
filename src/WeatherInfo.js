@@ -8,21 +8,20 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
-        <div className="col-4 CurrentCityIcon">
+        <div className="col-3 col-md-4 CurrentCityIcon">
           <WeatherIcon
             code={props.data.icon}
             alt={props.data.description}
             size={12}
           />
-
           <div className="CurrentWeatherDescription">
             {props.data.description}
           </div>
         </div>
-        <div className="col-4 CurrentTempBlock">
+        <div className="col-4 col-md-4 CurrentTempBlock">
           <CurrentTemperature celsius={props.data.temperature} />
         </div>
-        <div className="col-4 DescriptionBlock">
+        <div className="col-5 col-md-4 DescriptionBlock">
           <ul>
             <li>
               🌡{" "}
