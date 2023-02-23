@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
           <WeatherIcon
             code={props.data.icon}
             alt={props.data.description}
-            size={14}
+            size={12}
           />
 
           <div className="CurrentWeatherDescription">
@@ -25,20 +25,30 @@ export default function WeatherInfo(props) {
         <div className="col-4 DescriptionBlock">
           <ul>
             <li>
-              🌡 Feels like: {props.data.feelsLike}
-              <span className="FeelsLikeUnits">°</span>
+              🌡{" "}
+              <span className="listText">
+                {" "}
+                Feels like: {props.data.feelsLike}{" "}
+              </span>
+              <span className="smallUnits">°</span>
             </li>
-            <li>💧 Humidity: {props.data.humidity} %</li>
+            <li>
+              💧{" "}
+              <span className="listText">
+                {" "}
+                Humidity: {props.data.humidity} %
+              </span>
+            </li>
             <li>💨 Wind speed: {props.data.wind} km/h</li>
             <li>
               {" "}
-              ☀ Temp max: {props.data.tempMax}
-              <span className="FeelsLikeUnits">°</span>
+              🌞 Temp max: {props.data.tempMax}
+              <span className="smallUnits"> °</span>
             </li>
             <li>
               {" "}
               🌙 Temp min: {props.data.tempMin}
-              <span className="FeelsLikeUnits">°</span>
+              <span className="smallUnits"> °</span>
             </li>
           </ul>
         </div>

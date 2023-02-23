@@ -1,0 +1,25 @@
+.WeatherForecastDay,
+.card {
+  height: 180px;
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.WeatherForecastDay .card:hover {
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  background: rgba(74, 144, 226, 0.3);
+}
+
+.WeatherForecastDay h2 {
+  color: #ff6100;
+  font-size: 23px;
+}
+
+.WeatherForecastDay .forecast-temperatures {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.WeatherForecastDay .card-night-temperature {
+  opacity: 0.6;
+}

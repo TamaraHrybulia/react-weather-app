@@ -1,44 +1,42 @@
-ul {
+.WeatherInfo ul {
   list-style: none;
   line-height: 30px;
+  padding: 20px 0;
 }
 
-.CurrentWeatherDescription {
+.WeatherInfo .CurrentCityIcon {
+  text-align: center;
+}
+
+.WeatherInfo .CurrentWeatherDescription {
   text-align: center;
   font-weight: 300;
+  font-size: 18px;
 }
 
-.DescriptionBlock {
-  padding: 20px 0;
-}
-
-.FeelsLikeUnits {
-  position: relative;
-  top: -5px;
-  font-size: 13px;
-}
-
-.CurrentTemp {
-  font-size: 80px;
-  text-align: center;
-}
-.CurrentTempBlock {
-  padding: 20px 0;
+.WeatherInfo .CurrentTempBlock {
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 30px;
   text-align: center;
 }
 
-.Units {
-  position: relative;
-  top: -50px;
-  font-size: 20px;
+.WeatherInfo .DescriptionBlock {
+  padding: 0;
 }
 
-.Active {
-  cursor: default;
+.WeatherInfo .smallUnits {
+  position: relative;
+  top: -2px;
+  left: -1px;
+  font-size: 14px;
+}
+
+.WeatherInfo .listText {
+  padding-left: 5px;
+}
+
+.WeatherInfo .Active {
   color: #fff;
   text-decoration: none;
-}
-
-.CurrentCityIcon {
-  text-align: center;
 }
